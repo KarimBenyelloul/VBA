@@ -1,3 +1,7 @@
+'author karim benyelloul
+'25 / 03 / 2020 
+
+
 Private WithEvents MyIncs As Outlook.Items
 Private WithEvents MySents As Outlook.Items
 Private gl_PSVPattern, gl_PSVFolder, gl_TRNPattern, gl_TRNFolder, gl_SPSPattern, gl_SPSFolder As String
@@ -21,7 +25,7 @@ Private Sub Application_Startup()
     gl_PSVPattern = "(PSV[0-9]{5})|(PSV[0-9]{4})"
     gl_TRNPattern = "(TRN[0-9]{5})|(TRN[0-9]{4})"
     gl_SPSPattern = "(SPS[0-9]{5})|(SPS[0-9]{4})"
-    
+
     Dim olApp As Outlook.Application
     Dim objNS As Outlook.NameSpace
     Set olApp = Outlook.Application
